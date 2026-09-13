@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
+import { getAssetPath } from "@/lib/assets";
 import { zohoProducts } from "@/data/zoho-products";
 import {
   ZohoLogo,
@@ -109,7 +110,7 @@ export default function ZohoProductsPage() {
                   <div className="flex items-center gap-3">
                     <div className="w-11 h-11 rounded-xl bg-white border border-slate-200 flex items-center justify-center p-1.5 shrink-0 shadow-2xs">
                       <Image
-                        src={product.logoImg}
+                        src={getAssetPath(product.logoImg)}
                         alt={product.name}
                         width={36}
                         height={36}

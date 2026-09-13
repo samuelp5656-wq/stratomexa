@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import { getAssetPath } from "@/lib/assets";
 import {
   ShieldCheck,
   CheckCircle2,
@@ -44,7 +45,7 @@ export default function AboutPage() {
             <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-slate-50 p-2">
               <div className="relative h-96 sm:h-[420px] rounded-xl overflow-hidden">
                 <Image
-                  src="/images/sheetal-jha.jpeg"
+                  src={getAssetPath("/images/sheetal-jha.jpeg")}
                   alt="Stratomexa Leadership - Sheetal Jha and Anil Kumar"
                   fill
                   className="object-cover object-top"
@@ -117,7 +118,7 @@ export default function AboutPage() {
             {/* Certificate Preview */}
             <div className="relative h-64 sm:h-72 rounded-xl overflow-hidden border border-slate-200 bg-white shadow-xs">
               <Image
-                src="/images/certificate.jpeg"
+                src={getAssetPath("/images/certificate.jpeg")}
                 alt="Zoho Books Certified Professional Certificate - Anil Kumar"
                 fill
                 className="object-contain p-2"

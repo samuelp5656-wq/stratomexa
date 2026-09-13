@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { CheckCircle2, Sparkles } from "lucide-react";
+import { getAssetPath } from "@/lib/assets";
 
 export default function FloatingLogoBubbles() {
   return (
@@ -19,7 +20,7 @@ export default function FloatingLogoBubbles() {
             <span>Hub</span>
           </div>
           <Image
-            src="/images/logos/zoho-books.png"
+            src={getAssetPath("/images/logos/zoho-books.png")}
             alt="Zoho Books"
             width={60}
             height={60}
@@ -38,7 +39,7 @@ export default function FloatingLogoBubbles() {
         <div className="flex items-center gap-2.5 p-2 pr-3.5 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200/90 shadow-lg hover:shadow-xl transition-transform hover:scale-105">
           <div className="w-11 h-11 rounded-xl bg-emerald-50/70 border border-emerald-100 flex items-center justify-center p-1.5 shrink-0">
             <Image
-              src="/images/logos/zoho-payroll.png"
+              src={getAssetPath("/images/logos/zoho-payroll.png")}
               alt="Zoho Payroll"
               width={30}
               height={30}
@@ -57,7 +58,7 @@ export default function FloatingLogoBubbles() {
         <div className="flex items-center gap-2.5 p-2 pr-3.5 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200/90 shadow-lg hover:shadow-xl transition-transform hover:scale-105">
           <div className="w-11 h-11 rounded-xl bg-orange-50/70 border border-orange-100 flex items-center justify-center p-1.5 shrink-0">
             <Image
-              src="/images/logos/zoho-inventory.png"
+              src={getAssetPath("/images/logos/zoho-inventory.png")}
               alt="Zoho Inventory"
               width={30}
               height={30}
@@ -76,7 +77,7 @@ export default function FloatingLogoBubbles() {
         <div className="flex items-center gap-2.5 p-2 pr-3.5 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200/90 shadow-lg hover:shadow-xl transition-transform hover:scale-105">
           <div className="w-11 h-11 rounded-xl bg-blue-50/70 border border-blue-100 flex items-center justify-center p-1.5 shrink-0">
             <Image
-              src="/images/logos/zoho-billing.png"
+              src={getAssetPath("/images/logos/zoho-billing.png")}
               alt="Zoho Billing"
               width={30}
               height={30}
@@ -95,7 +96,7 @@ export default function FloatingLogoBubbles() {
         <div className="flex items-center gap-2.5 p-2 pr-3.5 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200/90 shadow-lg hover:shadow-xl transition-transform hover:scale-105">
           <div className="w-11 h-11 rounded-xl bg-rose-50/70 border border-rose-100 flex items-center justify-center p-1.5 shrink-0">
             <Image
-              src="/images/logos/zoho-expense.png"
+              src={getAssetPath("/images/logos/zoho-expense.png")}
               alt="Zoho Expense"
               width={30}
               height={30}
@@ -113,7 +114,7 @@ export default function FloatingLogoBubbles() {
       <div className="absolute -top-2 z-10 animate-bubble-3 hidden sm:block">
         <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/95 backdrop-blur-md border border-slate-200 shadow-md">
           <Image
-            src="/images/logos/all-zoho-products.png"
+            src={getAssetPath("/images/logos/all-zoho-products.png")}
             alt="All Zoho Products"
             width={20}
             height={20}

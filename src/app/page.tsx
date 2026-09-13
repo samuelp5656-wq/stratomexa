@@ -4,6 +4,7 @@ import Image from "next/image";
 import ParticleCanvas from "@/components/hero/ParticleCanvas";
 import FloatingLogoBubbles from "@/components/hero/FloatingLogoBubbles";
 import SoftwareMigrationShowcase from "@/components/migration/SoftwareMigrationShowcase";
+import { getAssetPath } from "@/lib/assets";
 import {
   ZohoLogo,
   ZohoBooksLogo,
@@ -122,7 +123,7 @@ export default function HomePage() {
             <div className="md:col-span-4 flex justify-center">
               <div className="relative w-52 h-64 sm:w-60 sm:h-72 rounded-xl overflow-hidden border-2 border-white shadow-lg shrink-0">
                 <Image
-                  src="/images/partner-photo.jpg"
+                  src={getAssetPath("/images/partner-photo.jpg")}
                   alt="Anil Kumar Suvarapu with K P Narayanan, VP Global Alliances - Zoho ERP"
                   fill
                   className="object-cover object-top"
@@ -397,7 +398,7 @@ export default function HomePage() {
                 <div className="flex items-center gap-4">
                   <div className="w-14 h-14 rounded-xl bg-white border border-white/20 flex items-center justify-center shrink-0 p-2 shadow-xs">
                     <Image
-                      src={p.logoImg}
+                      src={getAssetPath(p.logoImg)}
                       alt={p.name}
                       width={40}
                       height={40}

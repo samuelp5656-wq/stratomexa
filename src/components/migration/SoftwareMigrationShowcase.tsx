@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import { getAssetPath } from "@/lib/assets";
 import {
   TallyPrimeLogo,
   ExcelLogo,
@@ -212,7 +213,7 @@ export default function SoftwareMigrationShowcase() {
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-lg bg-white p-1 flex items-center justify-center shrink-0">
               <Image
-                src="/images/logos/zoho-books.png"
+                src={getAssetPath("/images/logos/zoho-books.png")}
                 alt="Zoho Books"
                 width={32}
                 height={32}
