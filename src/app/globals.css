@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --navy: #0a1628;
+    --navy2: #122040;
+    --gold: #c9a84c;
+    --gold2: #e8c97a;
+    --teal: #1ab394;
+    --white: #ffffff;
+    --off: #f8f6f1;
+    --gray: #6b7280;
+    --lg: #e5e7eb;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--white);
+    color: var(--navy);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+}
+
+/* Hero & Glass Styling */
+.hero-dark {
+  background-color: #0a1628;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-gradient-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(135deg, transparent, rgba(26, 179, 148, 0.08) 50%, rgba(201, 168, 76, 0.12));
+  pointer-events: none;
+}
+
+.hero-bottom-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #c9a84c, transparent);
+}
+
+.btn-gold {
+  background: #c9a84c;
+  color: #0a1628;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 13px;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-gold:hover {
+  background: #e8c97a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(201, 168, 76, 0.3);
+}
+
+.btn-outline-gold {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-outline-gold:hover {
+  border-color: #c9a84c;
+  color: #c9a84c;
+}
+
+.gold-text {
+  color: #c9a84c;
+}
+
+/* Light Cards */
+.saas-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  transition: all 0.25s ease;
+}
+
+.saas-card:hover {
+  border-color: #c9a84c;
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px rgba(10, 22, 40, 0.08);
+}
+
+/* Animated Migration Line */
+@keyframes flowArrow {
+  0% { transform: translateX(-100%); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateX(100%); opacity: 0; }
+}
+
+.animate-flow-arrow {
+  animation: flowArrow 2s infinite linear;
+}

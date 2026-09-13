@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Zoho Books",
+    "desc": "Accounting &amp; Finance",
+    "href": "https://store.zoho.in/ResellerCustomerSignUp.do?id=zkms014670000000080070532d5603fbfd5bbe22680ead8279b0d",
+    "localFile": "/images/logos/zoho-books.png"
+  },
+  {
+    "name": "Zoho Billing",
+    "desc": "Subscriptions &amp; Invoicing",
+    "href": "https://store.zoho.in/ResellerCustomerSignUp.do?id=zkms01467000000008007c82f98dd4711d9f2fa4383edcd91f8a5",
+    "localFile": "/images/logos/zoho-billing.png"
+  },
+  {
+    "name": "Zoho Expense",
+    "desc": "Expense Management",
+    "href": "https://store.zoho.in/ResellerCustomerSignUp.do?id=zkms014670000000080079540262f1311d17a5ad53ab0df5d717e",
+    "localFile": "/images/logos/zoho-expense.png"
+  },
+  {
+    "name": "Zoho Inventory",
+    "desc": "Stock &amp; Order Management",
+    "href": "https://store.zoho.in/ResellerCustomerSignUp.do?id=zkms01467000000008007fd2eec793e113cbdccfc073a1c1cdc51",
+    "localFile": "/images/logos/zoho-inventory.png"
+  },
+  {
+    "name": "Zoho FinancePlus",
+    "desc": "Integrated Finance Suite",
+    "href": "https://store.zoho.in/ResellerCustomerSignUp.do?id=zkms014670000000080074bc2e2c02be51bfa61082b2181d22929",
+    "localFile": "/images/logos/zoho-financeplus.png"
+  },
+  {
+    "name": "Zoho Checkout",
+    "desc": "Online Payments",
+    "href": "https://store.zoho.in/ResellerCustomerSignUp.do?id=zkms01467000000008007de16b1ec3f31abdc0f1d1b9b7614d07a",
+    "localFile": "/images/logos/zoho-checkout.png"
+  },
+  {
+    "name": "Zoho Commerce",
+    "desc": "eCommerce Platform",
+    "href": "https://store.zoho.in/ResellerCustomerSignUp.do?id=zkms01467000000008007891935f3355552039b6282315215f1ad",
+    "localFile": "/images/logos/zoho-commerce.png"
+  },
+  {
+    "name": "Zoho Payroll",
+    "desc": "Payroll &amp; HR",
+    "href": "https://store.zoho.in/ResellerCustomerSignUp.do?id=zkms01467000000008007f47b92afe3f09a4c18db67484e663d8b",
+    "localFile": "/images/logos/zoho-payroll.png"
+  },
+  {
+    "name": "All Zoho Products",
+    "desc": "Browse the full suite",
+    "href": "https://store.zoho.in/ResellerCustomerSignUp.do?id=zkms01467000000008007a0431245f658fd970f4fa32243cd3dc23302ab23998c305f4e43174b119fb47f",
+    "localFile": "/images/logos/all-zoho-products.png"
+  }
+]
