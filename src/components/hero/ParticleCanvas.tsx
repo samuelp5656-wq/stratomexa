@@ -36,9 +36,9 @@ export default function ParticleCanvas({ theme = "light" }: ParticleCanvasProps)
     let height = (canvas.height = canvas.parentElement?.clientHeight || window.innerHeight);
 
     const isMobile = width < 768;
-    const particleCount = isMobile ? 35 : 75;
-    const connectionDistance = isMobile ? 85 : 125;
-    const mouseRadius = 150;
+    const particleCount = isMobile ? 65 : 145;
+    const connectionDistance = isMobile ? 95 : 135;
+    const mouseRadius = 175;
 
     const mouse = {
       x: -1000,

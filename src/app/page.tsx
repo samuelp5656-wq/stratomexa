@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import ParticleCanvas from "@/components/hero/ParticleCanvas";
+import FloatingLogoBubbles from "@/components/hero/FloatingLogoBubbles";
 import SoftwareMigrationShowcase from "@/components/migration/SoftwareMigrationShowcase";
 import {
   ZohoLogo,
@@ -106,107 +107,9 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right Side Visual (Zoho & Zapier Interactive Ecosystem Card) */}
-            <div className="lg:col-span-5">
-              <div className="relative mx-auto max-w-md lg:max-w-none">
-                <div className="bg-white rounded-2xl border border-slate-200/90 p-7 sm:p-8 shadow-xl space-y-6 relative z-10 backdrop-blur-sm">
-                  {/* Top Bar */}
-                  <div className="flex items-center justify-between border-b border-slate-100 pb-4">
-                    <div className="flex items-center gap-2.5">
-                      <ZohoLogo size={18} />
-                      <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">
-                        Certified Partner
-                      </span>
-                    </div>
-                    <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">
-                      Live Verified
-                    </span>
-                  </div>
-
-                  {/* Connected Ecosystem Flow */}
-                  <div className="space-y-3">
-                    <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-between">
-                      <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-lg bg-white border border-slate-200 p-1 flex items-center justify-center shadow-2xs">
-                          <Image
-                            src="/images/logos/zoho-books.png"
-                            alt="Zoho Books"
-                            width={32}
-                            height={32}
-                            className="object-contain"
-                          />
-                        </div>
-                        <div>
-                          <div className="text-sm font-bold text-slate-900">Zoho Books Central</div>
-                          <div className="text-xs text-slate-500">Automated Financial Engine</div>
-                        </div>
-                      </div>
-                      <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping" />
-                    </div>
-
-                    <div className="grid grid-cols-2 gap-2.5 pt-1">
-                      <div className="p-3 rounded-xl bg-slate-50 border border-slate-200 flex items-center gap-2.5">
-                        <div className="w-8 h-8 rounded-lg bg-white p-1 flex items-center justify-center shadow-2xs shrink-0">
-                          <Image
-                            src="/images/logos/zoho-payroll.png"
-                            alt="Zoho Payroll"
-                            width={24}
-                            height={24}
-                            className="object-contain"
-                          />
-                        </div>
-                        <div className="min-w-0">
-                          <div className="text-xs font-bold text-slate-900 truncate">Zoho Payroll</div>
-                          <div className="text-[10px] text-slate-500">Auto Tax Sync</div>
-                        </div>
-                      </div>
-
-                      <div className="p-3 rounded-xl bg-slate-50 border border-slate-200 flex items-center gap-2.5">
-                        <div className="w-8 h-8 rounded-lg bg-white p-1 flex items-center justify-center shadow-2xs shrink-0">
-                          <Image
-                            src="/images/logos/zoho-inventory.png"
-                            alt="Zoho Inventory"
-                            width={24}
-                            height={24}
-                            className="object-contain"
-                          />
-                        </div>
-                        <div className="min-w-0">
-                          <div className="text-xs font-bold text-slate-900 truncate">Zoho Inventory</div>
-                          <div className="text-[10px] text-slate-500">Stock Decrement</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Certified Credential Pill */}
-                  <div className="p-3 rounded-xl bg-amber-50/70 border border-amber-200/80 flex items-center justify-between text-xs">
-                    <div>
-                      <span className="font-bold text-amber-900 block">Zoho Books Certified Professional</span>
-                      <span className="text-[11px] text-amber-700">Certificate ID: 7VPY782YPH8BU</span>
-                    </div>
-                    <span className="text-xs font-bold text-emerald-700 px-2 py-0.5 rounded bg-white border border-amber-200">
-                      Active
-                    </span>
-                  </div>
-
-                  {/* 3 Stats Bar */}
-                  <div className="grid grid-cols-3 gap-2.5 pt-1 border-t border-slate-100 text-center">
-                    <div className="p-2.5 rounded-lg bg-slate-50 border border-slate-200">
-                      <div className="font-extrabold text-xl text-slate-900">11+</div>
-                      <div className="text-[10px] text-slate-500 uppercase tracking-wider mt-0.5">Services</div>
-                    </div>
-                    <div className="p-2.5 rounded-lg bg-slate-50 border border-slate-200">
-                      <div className="font-extrabold text-xl text-emerald-600">Pan</div>
-                      <div className="text-[10px] text-slate-500 uppercase tracking-wider mt-0.5">India</div>
-                    </div>
-                    <div className="p-2.5 rounded-lg bg-slate-50 border border-slate-200">
-                      <div className="font-extrabold text-xl text-slate-900">100%</div>
-                      <div className="text-[10px] text-slate-500 uppercase tracking-wider mt-0.5">Compliant</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            {/* Right Side Visual: Simple floating logo bubble animations (Zapier & Zoho style) */}
+            <div className="lg:col-span-5 flex items-center justify-center pt-6 lg:pt-0">
+              <FloatingLogoBubbles />
             </div>
           </div>
         </div>

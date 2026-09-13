@@ -120,3 +120,41 @@
 .animate-flow-arrow {
   animation: flowArrow 2s infinite linear;
 }
+
+/* Floating Bubble Animations for Hero */
+@keyframes bubbleFloat1 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(2deg); }
+}
+
+@keyframes bubbleFloat2 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(10px) rotate(-2deg); }
+}
+
+@keyframes bubbleFloat3 {
+  0%, 100% { transform: translate(0px, 0px); }
+  50% { transform: translate(-6px, -10px); }
+}
+
+@keyframes bubblePulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 10px 30px -5px rgba(26, 179, 148, 0.2); }
+  50% { transform: scale(1.04); box-shadow: 0 20px 40px -5px rgba(26, 179, 148, 0.35); }
+}
+
+.animate-bubble-1 {
+  animation: bubbleFloat1 4.8s ease-in-out infinite;
+}
+
+.animate-bubble-2 {
+  animation: bubbleFloat2 5.6s ease-in-out infinite 0.8s;
+}
+
+.animate-bubble-3 {
+  animation: bubbleFloat3 6.2s ease-in-out infinite 1.5s;
+}
+
+.animate-bubble-pulse {
+  animation: bubblePulse 4s ease-in-out infinite;
+}
+
