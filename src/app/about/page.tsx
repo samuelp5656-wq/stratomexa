@@ -88,8 +88,8 @@ export default function AboutPage() {
                 <div className="text-xs text-slate-600 font-medium">Statutory Compliance Focus</div>
               </div>
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
-                <div className="text-xl font-bold font-serif text-slate-900">Pan-India</div>
-                <div className="text-xs text-slate-600 font-medium">Remote & Hyderabad Office</div>
+                <div className="text-xl font-bold font-serif text-slate-900">Global Reach</div>
+                <div className="text-xs text-slate-600 font-medium">India HQ &amp; Worldwide Clients</div>
               </div>
             </div>
           </div>

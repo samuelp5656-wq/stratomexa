@@ -146,7 +146,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                 </li>
                 <li className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                  <span>Hyderabad HQ & Pan-India Remote</span>
+                  <span>India HQ &amp; Global Remote Delivery</span>
                 </li>
               </ul>
               <div className="pt-3 border-t border-slate-200 text-xs text-slate-500 flex items-center gap-2">

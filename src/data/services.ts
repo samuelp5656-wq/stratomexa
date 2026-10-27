@@ -28,7 +28,7 @@ export const servicesData: Service[] = [
       "Companies migrating from desktop software like Tally Prime, Busy, or Excel spreadsheets",
       "Fast-growing SMEs needing multi-user role-based cloud accounting",
       "Founders seeking automated e-invoicing, e-way bills, and automated bank reconciliation",
-      "Businesses wanting official certified Zoho implementation support in Hyderabad & Pan-India"
+      "Businesses wanting official certified Zoho implementation support in India & globally"
     ],
     deliverables: [
       "Bespoke Chart of Accounts architecture aligned with your industry standards",

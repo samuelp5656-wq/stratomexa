@@ -17,13 +17,9 @@ import {
   ArrowRight,
   ExternalLink,
 } from "lucide-react";
-import {
-  ZohoLogo,
-  ZohoBooksLogo,
-  ZohoPayrollLogo,
-  ZohoCrmLogo,
-  ZohoOneLogo,
-} from "@/components/logos/BrandLogos";
+import Image from "next/image";
+import { getAssetPath } from "@/lib/assets";
+import { ZohoLogo } from "@/components/logos/BrandLogos";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -100,7 +96,7 @@ export default function Navbar() {
                 <span className="text-[10px] font-semibold text-slate-500 uppercase tracking-wider">
                   Partner with
                 </span>
-                <ZohoLogo size={14} />
+                <ZohoLogo size={16} className="text-slate-900" />
               </div>
             </div>
           </Link>
@@ -176,7 +172,7 @@ export default function Navbar() {
               <Link
                 href="/zoho-products/"
                 className={`flex items-center gap-1 px-3 py-2 text-xs font-semibold rounded-lg transition-colors ${
-                  pathname === "/zoho-products" || pathname === "/zoho-products/"
+                  pathname.startsWith("/zoho-products")
                     ? "text-slate-900 bg-slate-100"
                     : "text-slate-600 hover:text-slate-900 hover:bg-slate-50"
                 }`}
@@ -186,55 +182,172 @@ export default function Navbar() {
               </Link>
 
               {zohoDropdown && (
-                <div className="absolute top-full left-0 w-80 pt-2 z-50">
-                  <div className="bg-white border border-slate-200 rounded-xl shadow-lg p-3 space-y-2">
+                <div className="absolute top-full left-0 w-84 pt-2 z-50">
+                  <div className="bg-white border border-slate-200 rounded-xl shadow-lg p-3 space-y-1.5">
                     <div className="text-[10px] font-bold text-slate-400 uppercase tracking-wider px-1">
-                      Official Partner Portals
+                      Official Partner Suite
                     </div>
                     <Link
                       href="/zoho-products/"
-                      className="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 transition-colors"
+                      className="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 transition-colors group"
                     >
-                      <ZohoBooksLogo size={28} />
+                      <div className="w-8 h-8 rounded-lg bg-emerald-50/80 border border-emerald-100 flex items-center justify-center p-1 shrink-0">
+                        <Image
+                          src={getAssetPath("/images/logos/zoho-books.png")}
+                          alt="Zoho Books"
+                          width={24}
+                          height={24}
+                          className="object-contain"
+                        />
+                      </div>
                       <div>
-                        <div className="text-xs font-bold text-slate-900">Zoho Books</div>
-                        <div className="text-[11px] text-slate-500">Cloud Accounting & GST e-Invoice</div>
+                        <div className="text-xs font-bold text-slate-900 group-hover:text-emerald-700 transition-colors">
+                          Zoho Books
+                        </div>
+                        <div className="text-[11px] text-slate-500">
+                          GST e-Invoicing &amp; Cloud Accounting
+                        </div>
                       </div>
                     </Link>
                     <Link
                       href="/zoho-products/"
-                      className="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 transition-colors"
+                      className="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 transition-colors group"
                     >
-                      <ZohoPayrollLogo size={28} />
+                      <div className="w-8 h-8 rounded-lg bg-emerald-50/80 border border-emerald-100 flex items-center justify-center p-1 shrink-0">
+                        <Image
+                          src={getAssetPath("/images/logos/zoho-payroll.png")}
+                          alt="Zoho Payroll"
+                          width={24}
+                          height={24}
+                          className="object-contain"
+                        />
+                      </div>
                       <div>
-                        <div className="text-xs font-bold text-slate-900">Zoho Payroll</div>
-                        <div className="text-[11px] text-slate-500">Statutory Compliant Indian Payroll</div>
+                        <div className="text-xs font-bold text-slate-900 group-hover:text-emerald-700 transition-colors">
+                          Zoho Payroll
+                        </div>
+                        <div className="text-[11px] text-slate-500">
+                          Automated TDS &amp; Compliant Payroll
+                        </div>
                       </div>
                     </Link>
                     <Link
                       href="/zoho-products/"
-                      className="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 transition-colors"
+                      className="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 transition-colors group"
                     >
-                      <ZohoCrmLogo size={28} />
+                      <div className="w-8 h-8 rounded-lg bg-blue-50/80 border border-blue-100 flex items-center justify-center p-1 shrink-0">
+                        <Image
+                          src={getAssetPath("/images/logos/zoho-billing.png")}
+                          alt="Zoho Billing"
+                          width={24}
+                          height={24}
+                          className="object-contain"
+                        />
+                      </div>
                       <div>
-                        <div className="text-xs font-bold text-slate-900">Zoho CRM</div>
-                        <div className="text-[11px] text-slate-500">Lead to Invoice Automation</div>
+                        <div className="text-xs font-bold text-slate-900 group-hover:text-blue-700 transition-colors">
+                          Zoho Billing
+                        </div>
+                        <div className="text-[11px] text-slate-500">
+                          Recurring Subscriptions &amp; Retainers
+                        </div>
                       </div>
                     </Link>
                     <Link
                       href="/zoho-products/"
-                      className="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 transition-colors"
+                      className="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 transition-colors group"
                     >
-                      <ZohoOneLogo size={28} />
+                      <div className="w-8 h-8 rounded-lg bg-orange-50/80 border border-orange-100 flex items-center justify-center p-1 shrink-0">
+                        <Image
+                          src={getAssetPath("/images/logos/zoho-inventory.png")}
+                          alt="Zoho Inventory"
+                          width={24}
+                          height={24}
+                          className="object-contain"
+                        />
+                      </div>
                       <div>
-                        <div className="text-xs font-bold text-slate-900">Zoho One</div>
-                        <div className="text-[11px] text-slate-500">All 45+ Enterprise Applications</div>
+                        <div className="text-xs font-bold text-slate-900 group-hover:text-orange-700 transition-colors">
+                          Zoho Inventory
+                        </div>
+                        <div className="text-[11px] text-slate-500">
+                          Stock, Barcode &amp; Multi-Warehouse
+                        </div>
                       </div>
                     </Link>
+                    <Link
+                      href="/zoho-products/"
+                      className="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 transition-colors group"
+                    >
+                      <div className="w-8 h-8 rounded-lg bg-rose-50/80 border border-rose-100 flex items-center justify-center p-1 shrink-0">
+                        <Image
+                          src={getAssetPath("/images/logos/zoho-expense.png")}
+                          alt="Zoho Expense"
+                          width={24}
+                          height={24}
+                          className="object-contain"
+                        />
+                      </div>
+                      <div>
+                        <div className="text-xs font-bold text-slate-900 group-hover:text-rose-700 transition-colors">
+                          Zoho Expense
+                        </div>
+                        <div className="text-[11px] text-slate-500">
+                          Receipt AutoScan &amp; Mileage Claims
+                        </div>
+                      </div>
+                    </Link>
+                    <Link
+                      href="/zoho-products/"
+                      className="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 transition-colors group"
+                    >
+                      <div className="w-8 h-8 rounded-lg bg-slate-100 border border-slate-200 flex items-center justify-center p-1 shrink-0">
+                        <Image
+                          src={getAssetPath("/images/logos/all-zoho-products.png")}
+                          alt="Zoho One"
+                          width={24}
+                          height={24}
+                          className="object-contain"
+                        />
+                      </div>
+                      <div>
+                        <div className="text-xs font-bold text-slate-900 group-hover:text-slate-700 transition-colors">
+                          Zoho One
+                        </div>
+                        <div className="text-[11px] text-slate-500">
+                          All 45+ Integrated Business Apps
+                        </div>
+                      </div>
+                    </Link>
+
+                    <div className="pt-2 border-t border-slate-100 mt-1">
+                      <Link
+                        href="/pricing/"
+                        className="flex items-center justify-between px-2.5 py-1.5 rounded-lg bg-emerald-50 text-emerald-800 hover:bg-emerald-100 text-xs font-bold transition-colors"
+                      >
+                        <span>Compare All Plans &amp; Editions</span>
+                        <ArrowRight className="w-3.5 h-3.5 text-emerald-600" />
+                      </Link>
+                    </div>
                   </div>
                 </div>
               )}
             </div>
+
+            {/* Pricing & Comparison Link */}
+            <Link
+              href="/pricing/"
+              className={`flex items-center gap-1.5 px-3 py-2 text-xs font-semibold rounded-lg transition-colors ${
+                pathname.startsWith("/pricing")
+                  ? "text-slate-900 bg-slate-100"
+                  : "text-slate-600 hover:text-slate-900 hover:bg-slate-50"
+              }`}
+            >
+              <span>Pricing</span>
+              <span className="px-1.5 py-0.2 rounded-full bg-emerald-100 text-emerald-800 text-[9px] font-extrabold uppercase">
+                New
+              </span>
+            </Link>
 
             {/* Direct Links */}
             <Link
@@ -332,7 +445,16 @@ export default function Navbar() {
             href="/zoho-products/"
             className="block px-3 py-2 rounded-lg text-sm font-bold text-slate-900 hover:bg-slate-50"
           >
-            Zoho Partner Hub & Reseller Links
+            Zoho Partner Hub &amp; Reseller Links
+          </Link>
+          <Link
+            href="/pricing/"
+            className="flex items-center justify-between px-3 py-2 rounded-lg text-sm font-bold text-emerald-800 bg-emerald-50 hover:bg-emerald-100"
+          >
+            <span>Zoho Books Pricing &amp; Comparison</span>
+            <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-600 text-white font-extrabold uppercase">
+              New
+            </span>
           </Link>
           <Link
             href="/process/"

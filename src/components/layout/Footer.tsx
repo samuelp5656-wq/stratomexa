@@ -90,6 +90,14 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/pricing/" className="text-emerald-700 hover:text-emerald-800 transition-colors font-bold flex items-center gap-1.5">
+                  <span>Zoho Books Pricing &amp; Plans</span>
+                  <span className="text-[9px] px-1.5 py-0.2 rounded-full bg-emerald-100 text-emerald-800 uppercase">
+                    Compare
+                  </span>
+                </Link>
+              </li>
+              <li>
                 <Link href="/case-studies/" className="text-slate-600 hover:text-slate-900 transition-colors">
                   Client Case Studies
                 </Link>

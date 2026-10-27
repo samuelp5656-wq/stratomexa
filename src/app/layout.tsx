@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     siteName: "Stratomexa Business Consulting",
     title: "Stratomexa | Zoho Certified Partner & Financial Consulting",
     description:
-      "Simplify your finances. Grow your business. Official Zoho Certified Implementation Partner in Hyderabad & Pan-India.",
+      "Simplify your finances. Grow your business. Official Zoho Certified Implementation Partner serving India & Global enterprises.",
     images: [
       {
         url: "/images/certificate.jpeg",

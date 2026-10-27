@@ -54,7 +54,7 @@ export default function HomePage() {
               {/* Trust Badge (Zapier style) */}
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-semibold shadow-2xs">
                 <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                <span>Zoho Certified Implementation Partner — Hyderabad & Pan-India</span>
+                <span>Zoho Certified Implementation Partner — Global &amp; India HQ</span>
               </div>
 
               {/* Headline (Zoho & Zapier style) */}
@@ -99,7 +99,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                  <span>Pan-India Remote & On-Site</span>
+                  <span>Global Remote &amp; On-Site</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600" />
@@ -256,9 +256,9 @@ export default function HomePage() {
                     ✓
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-white">Pan-India Service</h4>
+                    <h4 className="text-sm font-bold text-white">Global &amp; Pan-India Reach</h4>
                     <p className="text-xs text-slate-300 mt-0.5">
-                      Based in Hyderabad, serving clients across India remotely and in person.
+                      Headquartered in Hyderabad, serving clients across India, UAE, US, UK &amp; globally.
                     </p>
                   </div>
                 </div>
@@ -300,7 +300,7 @@ export default function HomePage() {
                     Zoho Implementation Partner
                   </h3>
                   <p className="text-xs text-slate-400 mt-1">
-                    Hyderabad &amp; Pan-India | Remote-friendly
+                    India HQ &amp; Global Remote Consultation
                   </p>
                 </div>
 
