@@ -7,6 +7,8 @@ export function getAssetPath(path: string): string {
     return path;
   }
   const cleanPath = path.startsWith("/") ? path : `/${path}`;
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || (process.env.NODE_ENV === "production" ? "/stratomexa" : "");
+  // For custom domain stratomexa.in, basePath is empty string ("").
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   return `${basePath}${cleanPath}`;
 }
+
