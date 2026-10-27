@@ -546,7 +546,7 @@ export default function PricingPage() {
                 Book Free 15-Min Onboarding Discovery
               </h3>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Connect directly with Anil Kumar Suvarapu (Certified Zoho Implementation Architect) to review your accounting structure, migration cutover timeline, and plan recommendation.
+                Connect directly with Anil Kumar Suvarapu (Founder &amp; Finance Transformation Consultant, Stratomexa Business Consulting Services — ZOHO Books Certified Professional) to review your accounting structure, migration cutover timeline, and plan recommendation.
               </p>
 
               <div className="space-y-3 pt-2">

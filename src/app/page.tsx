@@ -139,7 +139,7 @@ export default function HomePage() {
                 Anil Kumar Suvarapu with K P Narayanan, VP – Global Alliances, Zoho ERP
               </h2>
               <p className="text-sm text-slate-600 leading-relaxed">
-                Our Founder &amp; Director, Anil Kumar Suvarapu, connecting directly with Zoho&apos;s executive leadership — reflecting Stratomexa&apos;s close working relationship with Zoho as an official Certified Implementation Partner.
+                Anil Kumar Suvarapu (Founder &amp; Finance Transformation Consultant, Stratomexa Business Consulting Services — ZOHO Books Certified Professional), connecting directly with Zoho&apos;s executive leadership — reflecting Stratomexa&apos;s close working relationship with Zoho as an official Certified Implementation Partner.
               </p>
               <div className="pt-2 flex items-center gap-3">
                 <div className="text-xs font-bold text-slate-700">Partner Verification ID: PI0626000</div>

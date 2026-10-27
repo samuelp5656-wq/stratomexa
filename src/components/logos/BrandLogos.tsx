@@ -305,20 +305,27 @@ export function ExcelLogo({ className = "", size = 48 }: LogoProps) {
   );
 }
 
-// Official Intuit QuickBooks 'qb' Icon (Pure symbol without names)
+// Official Intuit QuickBooks 'qb' Icon (Pure circular symbol matching user reference)
 export function QuickBooksLogo({ className = "", size = 48 }: LogoProps) {
   return (
-    <div
-      className={`relative rounded-full overflow-hidden shrink-0 shadow-2xs ${className}`}
-      style={{ width: size, height: size }}
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 61.54 61.54"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={`rounded-full shrink-0 shadow-2xs ${className}`}
+      aria-label="QuickBooks Icon"
     >
-      <Image
-        src={getAssetPath("/images/logos/qb-uploaded.png")}
-        alt="QuickBooks Icon"
-        fill
-        className="object-contain"
+      <path
+        fill="#2CA01C"
+        d="M30.77 61.54C47.76 61.54 61.54 47.76 61.54 30.77S47.76 0 30.77 0 0 13.78 0 30.77s13.77 30.77 30.77 30.77Z"
       />
-    </div>
+      <path
+        fill="#FFFFFF"
+        d="M20.51 18.8c-6.61 0-11.97 5.36-11.97 11.97s5.35 11.96 11.97 11.96h1.71v-4.44h-1.71c-4.15 0-7.52-3.37-7.52-7.52 0-4.15 3.37-7.52 7.52-7.52h4.11v23.25c0 2.45 1.99 4.44 4.44 4.44V18.8h-8.55Zm20.52 23.93c6.61 0 11.97-5.36 11.97-11.96s-5.35-11.96-11.97-11.96h-1.71v4.44h1.71c4.15 0 7.52 3.37 7.52 7.52s-3.37 7.52-7.52 7.52h-4.11V15.04c0-2.45-1.99-4.44-4.44-4.44v32.13h8.55Z"
+      />
+    </svg>
   );
 }
 
