@@ -22,7 +22,7 @@ export default function ProcessPage() {
   const steps = [
     {
       number: "01",
-      title: "Discovery & Free 30-Minute Consultation",
+      title: "Discovery & Free 15-Minute Consultation",
       tagline: "Understanding Your Unique Business Architecture",
       icon: PhoneCall,
       description:
@@ -162,7 +162,7 @@ export default function ProcessPage() {
         {/* CTA */}
         <div className="p-8 sm:p-10 rounded-2xl bg-slate-50 border border-slate-200 text-center max-w-3xl mx-auto space-y-4 shadow-xs">
           <h3 className="text-2xl font-bold text-slate-900">
-            Ready to Begin Step 1 with a Free 30-Minute Consultation?
+            Ready to Begin Step 1 with a Free 15-Minute Call?
           </h3>
           <p className="text-xs sm:text-sm text-slate-600 max-w-lg mx-auto leading-relaxed">
             There is zero obligation. We&apos;ll evaluate your current accounting pain points and present an actionable cutover plan.
@@ -172,7 +172,7 @@ export default function ProcessPage() {
               href="/contact/"
               className="px-6 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wider shadow-xs transition-colors"
             >
-              Book Free Discovery Call
+              Book 15 Mins Call
             </Link>
           </div>
         </div>

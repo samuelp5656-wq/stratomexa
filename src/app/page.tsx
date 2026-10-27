@@ -73,13 +73,13 @@ export default function HomePage() {
               {/* Action Buttons */}
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-1">
                 <a
-                  href="https://wa.me/917981395907?text=Hi%20Stratomexa%2C%20I%20would%20like%20to%20book%20a%20free%20consultation%20call."
+                  href="https://wa.me/917981395907?text=Hi%20Stratomexa%2C%20I%20would%20like%20to%20book%20a%2015%20mins%20call."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-6 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wider shadow-md hover:shadow-lg transition-all flex items-center gap-2.5"
                 >
                   <PhoneCall className="w-4 h-4 text-emerald-400" />
-                  <span>Book Free 30-Min Call</span>
+                  <span>Book 15 Mins Call</span>
                 </a>
 
                 <Link
@@ -443,10 +443,10 @@ export default function HomePage() {
               Get In Touch
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#0a1628]">
-              Book Your Free Consultation
+              Book 15 Mins Call
             </h2>
             <p className="text-slate-600 text-sm leading-relaxed">
-              Talk to us about your business finances — no obligation, completely free.
+              Talk to our certified specialists about your finances or Zoho migration — no obligation, completely free.
             </p>
           </div>
 

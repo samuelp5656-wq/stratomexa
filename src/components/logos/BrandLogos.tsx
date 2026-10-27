@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import { getAssetPath } from "@/lib/assets";
 
 interface LogoProps {
   className?: string;
@@ -245,26 +247,20 @@ export function ZohoOneLogo({ className = "", size = 32 }: LogoProps) {
   );
 }
 
-// Official Tally Prime Logo
-export function TallyPrimeLogo({ className = "", size = 32 }: LogoProps) {
+// Official Modern TallyPrime Logo
+export function TallyPrimeLogo({ className = "", size = 36 }: LogoProps) {
   return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 36 36"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className={className}
-      aria-label="Tally Prime"
+    <div
+      className={`relative rounded-xl overflow-hidden shrink-0 border border-slate-200 shadow-2xs bg-white flex items-center justify-center ${className}`}
+      style={{ width: size, height: size }}
     >
-      <rect width="36" height="36" rx="8" fill="#002D62" />
-      <circle cx="18" cy="18" r="11" fill="#FF8200" />
-      <path
-        d="M13 13H23V17H19.5V25H16.5V17H13V13Z"
-        fill="white"
+      <Image
+        src={getAssetPath("/images/logos/tally-prime.jpg")}
+        alt="Tally Prime"
+        fill
+        className="object-contain p-1"
       />
-      <circle cx="24" cy="13" r="2.5" fill="#00A3E0" />
-    </svg>
+    </div>
   );
 }
 
@@ -304,57 +300,37 @@ export function ExcelLogo({ className = "", size = 32 }: LogoProps) {
   );
 }
 
-// Official QuickBooks Logo
-export function QuickBooksLogo({ className = "", size = 32 }: LogoProps) {
+// Official Intuit QuickBooks Logo
+export function QuickBooksLogo({ className = "", size = 36 }: LogoProps) {
   return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 36 36"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className={className}
-      aria-label="Intuit QuickBooks"
+    <div
+      className={`relative rounded-xl overflow-hidden shrink-0 bg-white border border-slate-200/80 shadow-2xs flex items-center justify-center p-1 ${className}`}
+      style={{ width: size, height: size }}
     >
-      <rect width="36" height="36" rx="8" fill="#2CA01C" />
-      <circle cx="18" cy="18" r="11" fill="white" />
-      <path
-        d="M13 14V22C13 23.6569 14.3431 25 16 25C17.6569 25 19 23.6569 19 22V19H17V22C17 22.5523 16.5523 23 16 23C15.4477 23 15 22.5523 15 22V14C15 13.4477 15.4477 13 16 13C16.5523 13 17 13.4477 17 14V17H19V14C19 12.3431 17.6569 11 16 11C14.3431 11 13 12.3431 13 14Z"
-        fill="#2CA01C"
+      <Image
+        src={getAssetPath("/images/logos/quickbooks.svg")}
+        alt="Intuit QuickBooks"
+        fill
+        className="object-contain p-1"
       />
-      <path
-        d="M23 22V14C23 12.3431 21.6569 11 20 11C18.3431 11 17 12.3431 17 14V17H19V14C19 13.4477 19.4477 13 20 13C20.5523 13 21 13.4477 21 14V22C21 22.5523 20.5523 23 20 23C19.4477 23 19 22.5523 19 22V19H17V22C17 23.6569 18.3431 25 20 25C21.6569 25 23 23.6569 23 22Z"
-        fill="#2CA01C"
-      />
-    </svg>
+    </div>
   );
 }
 
-// Official SAP / Legacy ERP Logo
-export function SapLogo({ className = "", size = 32 }: LogoProps) {
+// Official SAP Logo (Prismatic Trapezoid & Clean Typography)
+export function SapLogo({ className = "", size = 36 }: LogoProps) {
   return (
-    <svg
-      width={size * 1.5}
-      height={size}
-      viewBox="0 0 54 36"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className={className}
-      aria-label="SAP ERP"
+    <div
+      className={`relative rounded-xl overflow-hidden shrink-0 bg-[#0069b4] shadow-2xs flex items-center justify-center ${className}`}
+      style={{ width: size * 1.6, height: size }}
     >
-      <rect width="54" height="36" rx="8" fill="#008FD3" />
-      <text
-        x="27"
-        y="23"
-        fontFamily="sans-serif"
-        fontSize="16"
-        fontWeight="bold"
-        fill="white"
-        textAnchor="middle"
-        letterSpacing="1"
-      >
-        SAP
-      </text>
-    </svg>
+      <Image
+        src={getAssetPath("/images/logos/sap.svg")}
+        alt="SAP ERP"
+        fill
+        className="object-contain p-1"
+      />
+    </div>
   );
 }
+

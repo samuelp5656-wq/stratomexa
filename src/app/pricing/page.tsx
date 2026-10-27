@@ -543,7 +543,7 @@ export default function PricingPage() {
 
             <div className="lg:col-span-5 bg-white/5 border border-white/10 rounded-2xl p-6 sm:p-8 backdrop-blur-md space-y-4">
               <h3 className="text-lg font-bold text-white">
-                Book Free 30-Min Onboarding Discovery
+                Book Free 15-Min Onboarding Discovery
               </h3>
               <p className="text-xs text-slate-300 leading-relaxed">
                 Connect directly with Anil Kumar Suvarapu (Certified Zoho Implementation Architect) to review your accounting structure, migration cutover timeline, and plan recommendation.
@@ -555,7 +555,7 @@ export default function PricingPage() {
                   className="w-full py-3 px-4 rounded-xl bg-[#c9a84c] hover:bg-[#d6b75e] text-[#0a1628] text-sm font-extrabold flex items-center justify-center gap-2 transition-all shadow-md"
                 >
                   <Calendar className="w-4 h-4" />
-                  <span>Schedule Consultation Call</span>
+                  <span>Book 15 Mins Call</span>
                 </Link>
 
                 <a

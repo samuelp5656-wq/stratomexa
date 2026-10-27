@@ -239,15 +239,32 @@ export default function SoftwareMigrationShowcase() {
           <div className="pt-2 border-t border-white/10 flex items-center justify-between text-xs text-slate-300">
             <span>Staff Training Included</span>
             <a
-              href="https://wa.me/917981395907?text=Hi%20Stratomexa%2C%20I%20want%20to%20migrate%20my%20accounts%20to%20Zoho%20Books."
+              href="https://wa.me/917981395907?text=Hi%20Stratomexa%2C%20I%20want%20to%20book%20a%2015%20mins%20call%20for%20accounting%20migration%20to%20Zoho%20Books."
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#c9a84c] hover:underline font-bold"
+              className="text-[#c9a84c] hover:underline font-bold flex items-center gap-1"
             >
-              Start Migration &rarr;
+              <span>Book 15 Mins Call</span>
+              <span>&rarr;</span>
             </a>
           </div>
         </div>
+      </div>
+
+      {/* Bottom Migration Consultation Bar */}
+      <div className="mt-8 pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="text-xs text-slate-600 text-center sm:text-left">
+          <strong className="text-[#0a1628] font-bold">Planning a migration to Zoho Books?</strong> Our certified implementation team ensures zero data loss, trial balance reconciliation, and GST master alignment.
+        </div>
+        <a
+          href="https://wa.me/917981395907?text=Hi%20Stratomexa%2C%20I%20would%20like%20to%20book%20a%2015%20mins%20call%20for%20accounting%20migration%20to%20Zoho%20Books."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-5 py-2.5 rounded-lg bg-slate-900 hover:bg-[#c9a84c] hover:text-slate-950 text-white font-bold text-xs uppercase tracking-wider shrink-0 transition-all flex items-center gap-2 shadow-xs"
+        >
+          <span>Book 15 Mins Call</span>
+          <ArrowRight className="w-3.5 h-3.5" />
+        </a>
       </div>
     </div>
   );
