@@ -19,7 +19,7 @@ import { ZohoLogo } from "@/components/logos/BrandLogos";
 export const metadata: Metadata = {
   title: "About Us | Zoho Certified Partner & Leadership",
   description:
-    "Learn about Stratomexa Business Consulting Services. Certified Zoho Implementation Partner (PI0626000) led by certified professionals Anil Kumar and Sheetal Jha in Hyderabad.",
+    "Learn about Stratomexa Business Consulting Services. Certified Zoho Implementation Partner (PI0626000) led by Founder & Director Anil Kumar Suvarapu and Partner Relations Manager Sheetal P.",
 };
 
 export default function AboutPage() {
@@ -46,18 +46,30 @@ export default function AboutPage() {
               <div className="relative h-96 sm:h-[420px] rounded-xl overflow-hidden">
                 <Image
                   src={getAssetPath("/images/sheetal-jha.jpeg")}
-                  alt="Stratomexa Leadership - Sheetal Jha and Anil Kumar"
+                  alt="Stratomexa Leadership - Anil Kumar Suvarapu and Sheetal P"
                   fill
                   className="object-cover object-top"
                   priority
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-white/95 backdrop-blur-md border border-slate-200">
-                  <div className="text-sm font-bold text-slate-900">
-                    Sheetal Jha & Anil Kumar
-                  </div>
-                  <div className="text-xs text-slate-600 mt-0.5 font-medium">
-                    Founders & Certified Zoho Implementation Leaders · Hyderabad HQ
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-left">
+                    <div>
+                      <div className="text-sm font-bold text-slate-900">
+                        Anil Kumar Suvarapu
+                      </div>
+                      <div className="text-xs text-blue-700 font-medium">
+                        Founder &amp; Director · Certified Zoho Architect
+                      </div>
+                    </div>
+                    <div className="sm:border-l sm:border-slate-200 sm:pl-3 pt-2 sm:pt-0 border-t sm:border-t-0 border-slate-100">
+                      <div className="text-sm font-bold text-slate-900">
+                        Sheetal P
+                      </div>
+                      <div className="text-xs text-emerald-700 font-medium">
+                        Partner Relations Manager
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
