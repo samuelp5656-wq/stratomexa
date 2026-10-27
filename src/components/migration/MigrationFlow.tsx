@@ -117,7 +117,7 @@ export default function MigrationFlow() {
 
           <div className="p-3.5 rounded-xl bg-white border border-slate-200 shadow-xs flex items-center justify-between hover:border-slate-300 transition-colors">
             <div className="flex items-center gap-3">
-              <TallyPrimeLogo size={28} />
+              <TallyPrimeLogo size={36} />
               <div>
                 <div className="text-xs font-bold text-slate-900">Tally Prime & ERP 9</div>
                 <div className="text-[11px] text-slate-500">Historical Ledgers & Masters</div>
@@ -128,7 +128,7 @@ export default function MigrationFlow() {
 
           <div className="p-3.5 rounded-xl bg-white border border-slate-200 shadow-xs flex items-center justify-between hover:border-slate-300 transition-colors">
             <div className="flex items-center gap-3">
-              <ExcelLogo size={28} />
+              <ExcelLogo size={36} />
               <div>
                 <div className="text-xs font-bold text-slate-900">Microsoft Excel / CSV</div>
                 <div className="text-[11px] text-slate-500">Manual Spreadsheets & Bills</div>
@@ -139,7 +139,7 @@ export default function MigrationFlow() {
 
           <div className="p-3.5 rounded-xl bg-white border border-slate-200 shadow-xs flex items-center justify-between hover:border-slate-300 transition-colors">
             <div className="flex items-center gap-3">
-              <QuickBooksLogo size={28} />
+              <QuickBooksLogo size={36} />
               <div>
                 <div className="text-xs font-bold text-slate-900">Intuit QuickBooks</div>
                 <div className="text-[11px] text-slate-500">AP/AR Customer Records</div>
@@ -150,7 +150,7 @@ export default function MigrationFlow() {
 
           <div className="p-3.5 rounded-xl bg-white border border-slate-200 shadow-xs flex items-center justify-between hover:border-slate-300 transition-colors">
             <div className="flex items-center gap-3">
-              <SapLogo size={28} />
+              <SapLogo size={36} />
               <div>
                 <div className="text-xs font-bold text-slate-900">SAP & Custom ERPs</div>
                 <div className="text-[11px] text-slate-500">Multi-branch Warehouses</div>

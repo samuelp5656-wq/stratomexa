@@ -247,25 +247,37 @@ export function ZohoOneLogo({ className = "", size = 32 }: LogoProps) {
   );
 }
 
-// Official Modern TallyPrime Logo
-export function TallyPrimeLogo({ className = "", size = 36 }: LogoProps) {
+// Official Modern TallyPrime 3-Block Icon (Pure symbol without names)
+export function TallyPrimeLogo({ className = "", size = 48 }: LogoProps) {
   return (
-    <div
-      className={`relative rounded-xl overflow-hidden shrink-0 border border-slate-200 shadow-2xs bg-white flex items-center justify-center ${className}`}
-      style={{ width: size, height: size }}
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 100 100"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={`rounded-xl overflow-hidden shrink-0 shadow-2xs ${className}`}
+      aria-label="Tally Prime Icon"
     >
-      <Image
-        src={getAssetPath("/images/logos/tally-prime.jpg")}
-        alt="Tally Prime"
-        fill
-        className="object-contain p-1"
-      />
-    </div>
+      <defs>
+        <clipPath id="tally-box-clip">
+          <rect width="100" height="100" rx="14" />
+        </clipPath>
+      </defs>
+      <g clipPath="url(#tally-box-clip)">
+        {/* Top half: Dark Navy Blue */}
+        <rect x="0" y="0" width="100" height="50" fill="#004D8C" />
+        {/* Bottom-left: Amber/Golden Yellow */}
+        <rect x="0" y="50" width="50" height="50" fill="#ECA214" />
+        {/* Bottom-right: Medium Cyan/Teal Blue */}
+        <rect x="50" y="50" width="50" height="50" fill="#2980B9" />
+      </g>
+    </svg>
   );
 }
 
-// Official Microsoft Excel Logo
-export function ExcelLogo({ className = "", size = 32 }: LogoProps) {
+// Official Microsoft Excel Icon (Pure symbol without names)
+export function ExcelLogo({ className = "", size = 48 }: LogoProps) {
   return (
     <svg
       width={size}
@@ -273,64 +285,71 @@ export function ExcelLogo({ className = "", size = 32 }: LogoProps) {
       viewBox="0 0 36 36"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={className}
-      aria-label="Microsoft Excel"
+      className={`rounded-xl overflow-hidden shrink-0 shadow-2xs ${className}`}
+      aria-label="Microsoft Excel Icon"
     >
       <rect width="36" height="36" rx="8" fill="#107C41" />
+      <path d="M7 10L18 7V29L7 26V10Z" fill="#0E5C2F" />
+      <path d="M18 9H29V27H18V9Z" fill="#33C481" fillOpacity="0.45" />
       <path
-        d="M9 11L18 8V28L9 25V11Z"
-        fill="#0E5C2F"
-      />
-      <path
-        d="M18 10H27V26H18V10Z"
-        fill="#33C481"
-        fillOpacity="0.4"
-      />
-      <path
-        d="M12 15L16 21M16 15L12 21"
+        d="M10.5 15L15 21M15 15L10.5 21"
         stroke="white"
-        strokeWidth="2.2"
+        strokeWidth="2.4"
         strokeLinecap="round"
       />
-      <rect x="18" y="10" width="9" height="16" stroke="white" strokeWidth="1.5" fill="none" />
-      <line x1="18" y1="15" x2="27" y2="15" stroke="white" strokeWidth="1" />
-      <line x1="18" y1="21" x2="27" y2="21" stroke="white" strokeWidth="1" />
-      <line x1="22.5" y1="10" x2="22.5" y2="26" stroke="white" strokeWidth="1" />
+      <rect x="18" y="9" width="11" height="18" stroke="white" strokeWidth="1.5" fill="none" />
+      <line x1="18" y1="15" x2="29" y2="15" stroke="white" strokeWidth="1.2" />
+      <line x1="18" y1="21" x2="29" y2="21" stroke="white" strokeWidth="1.2" />
+      <line x1="23.5" y1="9" x2="23.5" y2="27" stroke="white" strokeWidth="1.2" />
     </svg>
   );
 }
 
-// Official Intuit QuickBooks Logo
-export function QuickBooksLogo({ className = "", size = 36 }: LogoProps) {
+// Official Intuit QuickBooks 'qb' Icon (Pure symbol without names)
+export function QuickBooksLogo({ className = "", size = 48 }: LogoProps) {
   return (
     <div
-      className={`relative rounded-xl overflow-hidden shrink-0 bg-white border border-slate-200/80 shadow-2xs flex items-center justify-center p-1 ${className}`}
+      className={`relative rounded-full overflow-hidden shrink-0 shadow-2xs ${className}`}
       style={{ width: size, height: size }}
     >
       <Image
-        src={getAssetPath("/images/logos/quickbooks.svg")}
-        alt="Intuit QuickBooks"
+        src={getAssetPath("/images/logos/qb-uploaded.png")}
+        alt="QuickBooks Icon"
         fill
-        className="object-contain p-1"
+        className="object-contain"
       />
     </div>
   );
 }
 
-// Official SAP Logo (Prismatic Trapezoid & Clean Typography)
-export function SapLogo({ className = "", size = 36 }: LogoProps) {
+// Official SAP Icon (Prismatic Trapezoid & Symbol)
+export function SapLogo({ className = "", size = 48 }: LogoProps) {
   return (
-    <div
-      className={`relative rounded-xl overflow-hidden shrink-0 bg-[#0069b4] shadow-2xs flex items-center justify-center ${className}`}
-      style={{ width: size * 1.6, height: size }}
+    <svg
+      width={size * 1.5}
+      height={size}
+      viewBox="0 0 412.38 204"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={`rounded-lg overflow-hidden shrink-0 shadow-2xs ${className}`}
+      aria-label="SAP Icon"
     >
-      <Image
-        src={getAssetPath("/images/logos/sap.svg")}
-        alt="SAP ERP"
-        fill
-        className="object-contain p-1"
+      <defs>
+        <linearGradient id="sap-pure-grad" x1="206.19" y1="0" x2="206.19" y2="204" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stopColor="#00b1eb" />
+          <stop offset="0.212" stopColor="#009ad9" />
+          <stop offset="0.519" stopColor="#007fc4" />
+          <stop offset="0.792" stopColor="#006eb8" />
+          <stop offset="1" stopColor="#0069b4" />
+        </linearGradient>
+      </defs>
+      <polyline points="0 204 208.413 204 412.38 0 0 0 0 204" fill="url(#sap-pure-grad)" />
+      <path
+        fill="#FFFFFF"
+        d="m244.727,38.359l-40.593-.025v96.518l-35.46-96.518h-35.16l-30.277,80.716c-3.224-20.352-24.277-27.38-40.84-32.649-10.937-3.512-22.541-8.678-22.434-14.387.091-4.687,6.225-9.04,18.377-8.385,8.17.433,15.373,1.092,29.71,8.006l14.102-24.557c-13.088-6.658-31.169-10.867-45.985-10.883h-.086c-17.277,0-31.677,5.598-40.602,14.824-6.221,6.443-9.572,14.626-9.712,23.679-.227,12.454,4.341,21.292,13.938,28.338,8.104,5.944,18.468,9.794,27.603,12.626,11.27,3.492,20.467,6.526,20.36,13.002-.083,2.355-.977,4.552-2.671,6.337-2.807,2.897-7.124,3.986-13.084,4.098-11.497.243-20.026-1.559-33.61-9.585l-12.536,24.903c13.546,7.705,29.586,12.223,45.952,12.223l2.106-.024c14.247-.256,25.745-4.316,34.929-11.712.527-.416,1.001-.845,1.488-1.277l-4.073,10.874h36.875l6.189-18.822c6.477,2.214,13.847,3.437,21.676,3.437,7.618,0,14.795-1.17,21.156-3.252l5.965,18.637h60.137v-38.969h13.113c31.706,0,50.456-16.147,50.456-43.202,0-30.139-18.219-43.969-57.011-43.969Zm-93.816,82.587c-4.737,0-9.177-.828-13.006-2.275l12.866-40.593h.244l12.643,40.708c-3.801,1.349-8.138,2.16-12.746,2.16Zm96.199-23.324h-8.941v-32.711h8.941c11.927,0,21.437,3.961,21.437,16.139,0,12.602-9.51,16.572-21.437,16.572"
       />
-    </div>
+    </svg>
   );
 }
+
 

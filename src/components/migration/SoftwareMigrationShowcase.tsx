@@ -40,7 +40,7 @@ export default function SoftwareMigrationShowcase() {
       name: "Tally Prime / ERP 9",
       category: "Desktop Accounting",
       description: "Complete extraction of historical financial years, multiple companies, custom vouchers, and inventory ledgers.",
-      logo: <TallyPrimeLogo size={36} />,
+      logo: <TallyPrimeLogo size={48} />,
       migrationTime: "7 - 10 Business Days",
       itemsMigrated: [
         "Full Chart of Accounts & Sub-ledgers",
@@ -55,7 +55,7 @@ export default function SoftwareMigrationShowcase() {
       name: "Excel Spreadsheets / CSV",
       category: "Manual Accounting",
       description: "Cleanse fragmented workbook sheets, standardize master records, and convert manual data into structured Zoho ledgers.",
-      logo: <ExcelLogo size={36} />,
+      logo: <ExcelLogo size={48} />,
       migrationTime: "5 - 7 Business Days",
       itemsMigrated: [
         "Cleaned Customer & Supplier Contacts",
@@ -70,7 +70,7 @@ export default function SoftwareMigrationShowcase() {
       name: "Intuit QuickBooks",
       category: "Cloud / Desktop",
       description: "Direct migration of chart of accounts, recurring invoices, customer databases, and historical journal entries.",
-      logo: <QuickBooksLogo size={36} />,
+      logo: <QuickBooksLogo size={48} />,
       migrationTime: "5 - 8 Business Days",
       itemsMigrated: [
         "Complete General Ledger & Journals",
@@ -85,7 +85,7 @@ export default function SoftwareMigrationShowcase() {
       name: "SAP / Legacy ERP",
       category: "Enterprise System",
       description: "Structured migration from SAP Business One or legacy client-server ERPs to Zoho Books & Zoho One.",
-      logo: <SapLogo size={36} />,
+      logo: <SapLogo size={48} />,
       migrationTime: "10 - 14 Business Days",
       itemsMigrated: [
         "Multi-location Warehouse Masters",
@@ -117,27 +117,29 @@ export default function SoftwareMigrationShowcase() {
       </div>
 
       {/* Source Selector Tabs */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-8">
         {sources.map((src) => {
           const isSelected = src.id === selectedId;
           return (
             <button
               key={src.id}
               onClick={() => setSelectedId(src.id)}
-              className={`p-4 rounded-xl text-left border transition-all flex flex-col justify-between space-y-3 cursor-pointer ${
+              className={`p-4 sm:p-5 rounded-2xl text-left border transition-all flex flex-col justify-between space-y-3 sm:space-y-4 cursor-pointer ${
                 isSelected
-                  ? "bg-white border-[#c9a84c] ring-2 ring-[#c9a84c]/20 shadow-md transform -translate-y-1"
-                  : "bg-white/70 hover:bg-white border-slate-200 hover:border-slate-300"
+                  ? "bg-white border-[#c9a84c] ring-2 ring-[#c9a84c]/30 shadow-md transform -translate-y-1"
+                  : "bg-white/80 hover:bg-white border-slate-200 hover:border-slate-300 shadow-2xs hover:shadow-sm"
               }`}
             >
               <div className="flex items-center justify-between">
-                <div>{src.logo}</div>
+                <div className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center shrink-0">
+                  {src.logo}
+                </div>
                 {isSelected && (
                   <span className="w-2.5 h-2.5 rounded-full bg-[#1ab394] animate-ping" />
                 )}
               </div>
               <div>
-                <div className="text-xs font-bold text-[#0a1628] leading-tight">{src.name}</div>
+                <div className="text-xs sm:text-sm font-bold text-[#0a1628] leading-tight">{src.name}</div>
                 <div className="text-[11px] text-slate-500 mt-0.5">{src.category}</div>
               </div>
             </button>
