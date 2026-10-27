@@ -19,7 +19,7 @@ import { ZohoLogo } from "@/components/logos/BrandLogos";
 export const metadata: Metadata = {
   title: "About Us | Zoho Certified Partner & Leadership",
   description:
-    "Learn about Stratomexa Business Consulting Services. Certified Zoho Implementation Partner (PI0626000) led by Founder & Director Anil Kumar Suvarapu and Partner Relations Manager Sheetal P.",
+    "Learn about Stratomexa Business Consulting Services. Certified Zoho Implementation Partner (PI0626000) led by Founder & Director Anil Kumar Suvarapu and Sheetal Jha (Partner Relations Manager | Zoho Finance Suite).",
 };
 
 export default function AboutPage() {
@@ -46,7 +46,7 @@ export default function AboutPage() {
               <div className="relative h-96 sm:h-[420px] rounded-xl overflow-hidden">
                 <Image
                   src={getAssetPath("/images/sheetal-jha.jpeg")}
-                  alt="Stratomexa Leadership - Anil Kumar Suvarapu and Sheetal P"
+                  alt="Stratomexa Leadership - Anil Kumar Suvarapu and Sheetal Jha"
                   fill
                   className="object-cover object-top"
                   priority
@@ -64,10 +64,10 @@ export default function AboutPage() {
                     </div>
                     <div className="sm:border-l sm:border-slate-200 sm:pl-3 pt-2 sm:pt-0 border-t sm:border-t-0 border-slate-100">
                       <div className="text-sm font-bold text-slate-900">
-                        Sheetal P
+                        Sheetal Jha
                       </div>
                       <div className="text-xs text-emerald-700 font-medium">
-                        Partner Relations Manager
+                        Partner Relations Manager | Zoho Finance Suite
                       </div>
                     </div>
                   </div>
